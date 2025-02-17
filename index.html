@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukesh CV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e8930896b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1><span>Tirumala</span> Mukesh Goud.</h1>
+            <br>
+
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="close-btn" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <h2>Hi, I'm <span>Mukesh</span><br>from VIT Vellore.</h2>
+            <br>
+            <h4>Welcome to my <span class="red-text">Portfolio</span></h4>
+        </div>
+    </div>
+</div>
+<!------------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user11.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, This is Mukesh. Im a fresh engineering graduate and a motivated  student currently persuing an Integrated M.tech Software Engineering at Vellore Institute of Technology Vellore,
+                    seeking an opportunity as a Software Engineer to apply my knowledge and skills in a dynamic environment, eager
+                    to contribute to the growth of the organization while continuously learning and building a successful career in
+                    software Industry</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-titles active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-titles"onclick="opentab('Education')">Education</p>
+                        <p class="tab-titles"onclick="opentab('Experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents"id="Education">
+                        <ul>
+                            <li class="education-item">
+                                <span>2026 :</span><br>
+                                Integrated M.Tech Software Engineer.<br>
+                                Vellore Institute of Technology, Vellore.
+                                <span class="cgpa">CGPA: 8.43</span>
+                            </li>
+
+                            <li class="education-item">
+                                <span>2021 : </span><br>
+                                Board of Intermediate Education.<br>
+                                Abhyaas Jr College, Hyderabad.
+                                <span class="cgpa">Percentage: 97.6%</span>
+                            </li>
+
+                            <li class="education-item">
+                                <span>2019 : </span><br>
+                                Board of Secondary Education.<br>
+                                St Judes High School, Nizamabad.
+                                <span class="cgpa">CGPA: 9.8</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages :</span><br>Python, Java(basics)</li>
+                            <li><span>Microsoft Azure : </span><br>Azure Data Factory, Azure Data Lake, Databricks, PySpark</li>
+                            <li><span>MERN Full Stack : </span><br>MongoDB, React, NodeJS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"id="Experience">
+                        <ul>
+                            <li><span>MERN Intern :</span><br>Developed a Real time project using MERN.</li>
+
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------services--------------------------------------------------------------------------------------------->
+
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+
+                <h2>Microsoft Azure</h2>
+                <p> • Designed and implemented a real-time data ingestion pipeline using Azure Data Factory (ADF) for data
+                    migration. <br>
+                    • Migrated data from onpremises to cloud (Azure Data Lake storage). <br>
+                    • Understanding and gained hands-on experience in real-time data processing in data migration process.</p>
+                <a href="https://drive.google.com/file/d/1DTERWyVP57Xl2Yd9udXha_kuTwQQDz83/view?usp=drive_link">View</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                <h2>MERN Full Stack</h2>
+                <p>• Successfully completed a comprehensive course on MongoDB development using Python, covering database design, CRUD operations, indexing, and query optimization. <br>
+                    • Acquired hands-on experience in managing and integrating MongoDB with Python applications</p>
+                <a href="https://drive.google.com/file/d/1oQ4dt6aldiJ8EcwFm2JhVrO9s3oDBlRW/view?usp=drive_link">View</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Languages</h2>
+                <p><strong>Python: </strong> Proficient in Python, with hands-on experience in developing applications and solving problems.</p> <br>
+                <p><strong>MongoDB: </strong> Successfully completed a course on MongoDB development,
+                    covering CRUD operations, indexing, and query optimization. Certified by Udemy.</p>
+                <a href="https://drive.google.com/file/d/1smnZbs2hZjY-PGZwtvvXFGRAIdKiAhLT/view?usp=drive_link">View</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!---------------------------------------------------------projects------------------------------------------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images\Bank.png">
+                <div class="layer">
+                    <h3>Banking Application using MERN</h3>
+                    <p> Developed a simple fullstack project that enable user authentication, account management using MERN stack.</p>
+                    <a href="https://github.com/Mukesh-2003/Banking_Application-using-MERN"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\cloud.jpg">
+                <div class="layer">
+                    <h3>Microsoft Azure Ingestion</h3>
+                    <p> Designed and implemented a real-time data ingestion pipeline using Azure Data Factory (ADF) for data
+                        migration. <br>
+                        Migrated data from onpremises to cloud (Azure Data Lake storage).</p>
+                    <a href="https://github.com/Mukesh-2003"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\cctv.jpg">
+                <div class="layer">
+                    <h3>Integration of CCTV Surveillance with Emergency System</h3>
+                    <p> Capturing the Accidents (Fire or Road accident) and abnormal activities like Gang fight, Robbery,
+                        through the CCTV nearby and reporting to respective emergency services (Fire station, Police Station) with the
+                        Proof of photos/videos and location details.</p>
+                    <a href="https://github.com/Mukesh-2003/Integration-of-CCTV-Surveillance-with-Emergency-System"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Mukesh-2003" class="btn">See more..</a>
+    </div>
+</div>
+
+
+
+<!-----------------------------------------------------------Contact--------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mukeshgoud102@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>7993938546</p>
+
+                <div class="social-icons">
+                    <a href="https://x.com/Muki_2003"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/mukesh_tirumala/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mukesh-goud-21MIS0102/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""></a>
+                </div>
+
+
+                <a href="https://drive.google.com/file/d/1W9VMtEJEOigHeDoi264-LRED17eH67fU/view?usp=drive_link" download class="btn btn2">View / Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link')
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab')
+        }
+        document.getElementById(tabname).classList.add('active-tab');
+        event.currentTarget.classList.add('active-link');
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    var menuBtn = document.getElementById("menu-btn");  // Get the menu button
+    var closeBtn = document.getElementById("close-btn"); // Get the close button
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+        menuBtn.style.display = "none";  // Hide menu button
+        closeBtn.style.display = "block";  // Show close button
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        menuBtn.style.display = "block";  // Show menu button
+        closeBtn.style.display = "none";  // Hide close button
+
+    }
+
+
+</script>
+
+
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzd4zcR6Fq6_ek_F-U63Gt97W7QyzKAxLOIDTTMx-btWP11OX0xMXWn0mJapRp_Zto/exec"
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      msg.innerHTML = "Sending your Message...."
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+
+            setTimeout(function(){
+                msg.innerHTML="";
+            },5000)
+            form.reset();
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
